@@ -1,0 +1,342 @@
+2015-09-06 17:19:14,720 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 17:19:14,796 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}]
+2015-09-06 17:19:14,806 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 87.92ms
+2015-09-06 17:20:44,224 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 17:20:44,228 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}]
+2015-09-06 17:20:44,238 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 14.42ms
+2015-09-06 17:20:48,686 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:20:48,783 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:20:48,783 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 98.11ms
+2015-09-06 17:20:48,785 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:20:48,787 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:20:48,787 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:20:48,790 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 4.70ms
+2015-09-06 17:21:47,244 -lib:lib.py-L75-INFO: in  insert method. receive data:{"publisher": "min", "book_title": "learn python the hard way", "addr": "4-2-4", "author": "wang", "price": "3.7", "description": "ok"}
+2015-09-06 17:21:47,244 -lib:lib.py-L96-DEBUG: check parameter complete, ready to save in db
+2015-09-06 17:21:47,313 -lib:lib.py-L113-INFO: save book object successed! the book: {'publisher': 'min', 'book_title': 'learn python the hard way', 'addr': '4-2-4', 'author': 'wang', 'price': u'3.7', 'description': 'ok'}
+2015-09-06 17:21:47,313 -web:web.py-L1908-INFO: 200 POST /book (127.0.0.1) 71.13ms
+2015-09-06 17:21:50,465 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 17:21:50,468 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}, {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 17:21:50,474 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 10.22ms
+2015-09-06 17:21:54,139 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 17:21:54,141 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 17:21:54,147 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 8.16ms
+2015-09-06 17:21:54,149 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 17:21:54,150 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:21:54,150 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:21:54,152 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 2.84ms
+2015-09-06 17:27:19,604 -lib:lib.py-L51-INFO: in GET method! Get book by publisher: 'python'
+2015-09-06 17:27:19,606 -lib:lib.py-L59-INFO: Query result: []
+2015-09-06 17:27:19,627 -web:web.py-L1908-INFO: 200 GET /book?publisher=python (127.0.0.1) 23.15ms
+2015-09-06 17:27:35,418 -lib:lib.py-L51-INFO: in GET method! Get book by publisher: 'mingtian'
+2015-09-06 17:27:35,419 -lib:lib.py-L59-INFO: Query result: []
+2015-09-06 17:27:35,420 -web:web.py-L1908-INFO: 200 GET /book?publisher=mingtian (127.0.0.1) 2.25ms
+2015-09-06 17:27:49,007 -lib:lib.py-L51-INFO: in GET method! Get book by publisher: 'min'
+2015-09-06 17:27:49,021 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 17:27:49,022 -web:web.py-L1908-INFO: 200 GET /book?publisher=min (127.0.0.1) 15.03ms
+2015-09-06 17:28:00,456 -lib:lib.py-L47-INFO: in GET method! Get book by author: 'wang'
+2015-09-06 17:28:00,458 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 17:28:00,483 -web:web.py-L1908-INFO: 200 GET /book?author=wang (127.0.0.1) 27.42ms
+2015-09-06 17:28:08,102 -lib:lib.py-L47-INFO: in GET method! Get book by author: 'python'
+2015-09-06 17:28:08,103 -lib:lib.py-L59-INFO: Query result: []
+2015-09-06 17:28:08,103 -web:web.py-L1908-INFO: 200 GET /book?author=python (127.0.0.1) 1.34ms
+2015-09-06 17:28:22,014 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 17:28:22,016 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}, {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 17:28:22,017 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 3.28ms
+2015-09-06 17:29:26,118 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:29:26,120 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:29:26,124 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 6.15ms
+2015-09-06 17:29:26,130 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:29:26,132 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:29:26,132 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:29:26,133 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 2.90ms
+2015-09-06 17:29:30,779 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:29:30,780 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:29:30,781 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 3.10ms
+2015-09-06 17:29:30,787 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:29:30,789 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:29:30,795 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:29:30,796 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 10.14ms
+2015-09-06 17:29:52,710 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:29:52,711 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:29:52,712 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 2.29ms
+2015-09-06 17:29:52,720 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:29:52,724 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:29:52,725 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:29:52,726 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 5.82ms
+2015-09-06 17:37:10,685 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:37:10,686 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:37:10,686 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 1.52ms
+2015-09-06 17:37:10,688 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:37:10,689 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:37:10,689 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:37:10,689 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 1.01ms
+2015-09-06 17:37:19,166 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:37:19,168 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:37:19,170 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 4.06ms
+2015-09-06 17:37:19,177 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:37:19,180 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:37:19,180 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:37:19,181 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 4.12ms
+2015-09-06 17:37:21,064 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:37:21,065 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:37:21,065 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 1.97ms
+2015-09-06 17:37:21,068 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:37:21,068 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:37:21,068 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:37:21,068 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 0.98ms
+2015-09-06 17:37:22,330 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:37:22,330 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:37:22,330 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 0.99ms
+2015-09-06 17:37:22,332 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:37:22,332 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:37:22,333 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:37:22,333 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 0.93ms
+2015-09-06 17:37:26,144 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:37:26,145 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:37:26,147 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 2.98ms
+2015-09-06 17:37:26,154 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:37:26,160 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:37:26,162 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:37:26,163 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 9.47ms
+2015-09-06 17:41:41,022 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 17:41:41,024 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 17:41:41,026 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 4.45ms
+2015-09-06 17:41:41,039 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 17:41:41,040 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 17:41:41,040 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 17:41:41,041 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 2.59ms
+2015-09-06 18:00:27,403 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:00:27,404 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:00:27,404 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 1.81ms
+2015-09-06 18:00:27,406 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:00:27,407 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:00:27,407 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:00:27,407 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 0.97ms
+2015-09-06 18:00:59,207 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:00:59,208 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:00:59,208 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 1.06ms
+2015-09-06 18:00:59,210 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:00:59,210 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:00:59,211 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:00:59,211 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 1.09ms
+2015-09-06 18:01:10,785 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:01:10,786 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:01:10,787 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 3.06ms
+2015-09-06 18:01:10,795 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:01:10,804 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:01:10,805 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:01:10,806 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 11.52ms
+2015-09-06 18:04:59,787 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:04:59,789 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:04:59,790 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 3.23ms
+2015-09-06 18:04:59,872 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:04:59,878 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:04:59,879 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:04:59,883 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 11.02ms
+2015-09-06 18:06:49,459 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:06:49,460 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:06:49,460 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 1.28ms
+2015-09-06 18:06:49,465 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:06:49,465 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:06:49,465 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:06:49,466 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 1.05ms
+2015-09-06 18:07:29,378 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:07:29,379 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:07:29,380 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 2.41ms
+2015-09-06 18:07:29,389 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:07:29,391 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:07:29,391 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:07:29,392 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 2.77ms
+2015-09-06 18:19:45,182 -lib:lib.py-L258-INFO: reader detail! readerid:'1'
+2015-09-06 18:19:45,184 -lib:lib.py-L261-INFO: query result: None
+2015-09-06 18:19:45,185 -lib:lib.py-L264-ERROR: there is no record!
+2015-09-06 18:19:45,189 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=1 (127.0.0.1) 21.40ms
+2015-09-06 18:19:56,105 -lib:lib.py-L258-INFO: reader detail! readerid:'2'
+2015-09-06 18:19:56,107 -lib:lib.py-L261-INFO: query result: {'reader_id': 2, 'sex': None, 'age': 22, 'type': 0, 'email': u'aimer@123.com', 'reader_name': u'aimer'}
+2015-09-06 18:19:56,200 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=2 (127.0.0.1) 95.43ms
+2015-09-06 18:19:56,202 -lib:lib.py-L325-INFO: borrow detail! readerid:'2'
+2015-09-06 18:19:56,203 -lib:lib.py-L328-INFO: query result: []
+2015-09-06 18:19:56,203 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:19:56,207 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=2 (127.0.0.1) 4.58ms
+2015-09-06 18:20:57,703 -lib:lib.py-L232-INFO: in delete method! delete reader by reader_id:'2'.
+2015-09-06 18:20:57,819 -lib:lib.py-L242-INFO: delete reader object successed!
+2015-09-06 18:20:57,820 -web:web.py-L1908-INFO: 200 DELETE /reader?reader_id=2 (127.0.0.1) 117.12ms
+2015-09-06 18:21:28,153 -lib:lib.py-L186-INFO:  in post method. receive data: {"age": "13", "type": null, "email": "aimer@123.com", "reader_name": "aimer", "sex": "WOMAN"}
+2015-09-06 18:21:28,156 -tools:tools.py-L29-ERROR: Convert 'WOMAN' to Int Error: invalid literal for int() with base 10: 'WOMAN'
+2015-09-06 18:21:28,156 -lib:lib.py-L200-DEBUG: check parameters complete, ready to save in db
+2015-09-06 18:21:28,254 -lib:lib.py-L216-INFO: save reader object successed! the reader: {'age': 13, 'email': 'aimer@123.com', 'reader_name': 'aimer', 'sex': None}
+2015-09-06 18:21:28,254 -web:web.py-L1908-INFO: 200 POST /reader (127.0.0.1) 106.13ms
+2015-09-06 18:21:33,840 -lib:lib.py-L258-INFO: reader detail! readerid:'3'
+2015-09-06 18:21:33,936 -lib:lib.py-L261-INFO: query result: {'reader_id': 3, 'sex': None, 'age': 23, 'type': 0, 'email': u'dewldn@123.com', 'reader_name': u'dw'}
+2015-09-06 18:21:33,936 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=3 (127.0.0.1) 96.45ms
+2015-09-06 18:21:33,940 -lib:lib.py-L325-INFO: borrow detail! readerid:'3'
+2015-09-06 18:21:33,940 -lib:lib.py-L328-INFO: query result: []
+2015-09-06 18:21:33,940 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:21:33,943 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=3 (127.0.0.1) 3.35ms
+2015-09-06 18:21:45,249 -lib:lib.py-L258-INFO: reader detail! readerid:'4'
+2015-09-06 18:21:45,309 -lib:lib.py-L261-INFO: query result: {'reader_id': 4, 'sex': None, 'age': 13, 'type': 0, 'email': u'aimer@123.com', 'reader_name': u'aimer'}
+2015-09-06 18:21:45,310 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=4 (127.0.0.1) 60.88ms
+2015-09-06 18:21:45,312 -lib:lib.py-L325-INFO: borrow detail! readerid:'4'
+2015-09-06 18:21:45,313 -lib:lib.py-L328-INFO: query result: []
+2015-09-06 18:21:45,313 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:21:45,317 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=4 (127.0.0.1) 4.81ms
+2015-09-06 18:26:07,470 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 18:26:07,472 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}, {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 18:26:07,477 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 3.77ms
+2015-09-06 18:26:10,429 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 18:26:10,430 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 18:26:10,431 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 2.75ms
+2015-09-06 18:26:10,441 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 18:26:10,446 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:26:10,446 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:26:10,448 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 6.80ms
+2015-09-06 18:45:33,920 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 18:45:33,921 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}, {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 18:45:33,921 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 1.78ms
+2015-09-06 18:45:36,592 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 18:45:36,595 -lib:lib.py-L59-INFO: Query result: {'publisher': u'rui', 'book_title': u'learn  python', 'addr': u'4-7-2', 'author': u'yin', 'price': 1.3, 'book_id': 1, 'description': u'something'}
+2015-09-06 18:45:36,596 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 4.58ms
+2015-09-06 18:45:36,609 -lib:lib.py-L320-INFO: borrow detail! bookid:'1'
+2015-09-06 18:45:36,611 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:45:36,613 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:45:36,617 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 8.42ms
+2015-09-06 18:45:40,115 -lib:lib.py-L128-INFO:  in delete method! delete book by book_id:'1'.
+2015-09-06 18:45:40,504 -lib:lib.py-L139-INFO: delete book object successed!
+2015-09-06 18:45:40,510 -web:web.py-L1908-INFO: 200 DELETE /book?book_id=1 (127.0.0.1) 462.14ms
+2015-09-06 18:46:50,547 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-06 18:46:50,551 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}]
+2015-09-06 18:46:50,554 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 7.29ms
+2015-09-06 18:46:53,596 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 18:46:53,598 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 18:46:53,598 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 2.43ms
+2015-09-06 18:46:53,602 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 18:46:53,606 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:46:53,610 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:46:53,610 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 8.53ms
+2015-09-06 18:47:31,601 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 18:47:31,602 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 18:47:31,602 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 1.43ms
+2015-09-06 18:47:31,609 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 18:47:31,610 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 18:47:31,610 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 18:47:31,610 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 1.31ms
+2015-09-06 19:01:31,004 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:01:31,011 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:01:31,012 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 9.65ms
+2015-09-06 19:01:31,013 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:01:31,016 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:01:31,016 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:01:31,021 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 7.97ms
+2015-09-06 19:05:21,157 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:05:21,159 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:05:21,160 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 3.78ms
+2015-09-06 19:05:21,172 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:05:21,173 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:05:21,174 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:05:21,174 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 4.84ms
+2015-09-06 19:09:30,271 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:09:30,272 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:09:30,332 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 60.88ms
+2015-09-06 19:09:30,334 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:09:30,337 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:09:30,337 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:09:30,342 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 8.03ms
+2015-09-06 19:09:31,963 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:09:31,964 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:09:32,006 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 43.01ms
+2015-09-06 19:09:32,009 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:09:32,010 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:09:32,010 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:09:32,019 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 12.18ms
+2015-09-06 19:10:31,062 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:10:31,063 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:10:31,063 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 1.05ms
+2015-09-06 19:10:31,065 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:10:31,065 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:10:31,065 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:10:31,066 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 0.92ms
+2015-09-06 19:10:35,011 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '3'
+2015-09-06 19:10:35,014 -lib:lib.py-L59-INFO: Query result: None
+2015-09-06 19:10:35,015 -lib:lib.py-L62-ERROR: There is no record!
+2015-09-06 19:10:35,017 -web:web.py-L1908-INFO: 200 GET /book?book_id=3 (127.0.0.1) 6.84ms
+2015-09-06 19:10:38,257 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '1'
+2015-09-06 19:10:38,257 -lib:lib.py-L59-INFO: Query result: None
+2015-09-06 19:10:38,257 -lib:lib.py-L62-ERROR: There is no record!
+2015-09-06 19:10:38,258 -web:web.py-L1908-INFO: 200 GET /book?book_id=1 (127.0.0.1) 1.15ms
+2015-09-06 19:10:44,147 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '3'
+2015-09-06 19:10:44,148 -lib:lib.py-L59-INFO: Query result: None
+2015-09-06 19:10:44,149 -lib:lib.py-L62-ERROR: There is no record!
+2015-09-06 19:10:44,149 -web:web.py-L1908-INFO: 200 GET /book?book_id=3 (127.0.0.1) 2.15ms
+2015-09-06 19:13:16,797 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:13:16,799 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:13:16,802 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 5.26ms
+2015-09-06 19:13:16,804 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:13:16,806 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:13:16,806 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:13:16,807 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 3.04ms
+2015-09-06 19:22:29,774 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:22:29,776 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:22:29,777 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 4.09ms
+2015-09-06 19:22:29,779 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:22:29,781 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:22:29,782 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:22:29,782 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 2.91ms
+2015-09-06 19:34:30,903 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:34:30,904 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:34:30,905 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 1.53ms
+2015-09-06 19:34:30,910 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:34:30,910 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:34:30,911 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:34:30,911 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 1.13ms
+2015-09-06 19:34:53,046 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:34:53,047 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:34:53,048 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 3.16ms
+2015-09-06 19:34:53,064 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:34:53,065 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:34:53,065 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:34:53,066 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 1.70ms
+2015-09-06 19:41:05,028 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:41:05,029 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:41:05,030 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 2.22ms
+2015-09-06 19:41:05,038 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:41:05,041 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:41:05,041 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:41:05,042 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 4.45ms
+2015-09-06 19:47:38,805 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:47:38,806 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:47:38,807 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 2.26ms
+2015-09-06 19:47:38,815 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:47:38,815 -lib:lib.py-L323-INFO: query result: None
+2015-09-06 19:47:38,818 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-06 19:47:38,819 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 4.73ms
+2015-09-06 19:50:13,711 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": "3", "bookid": "2"}
+2015-09-06 19:50:14,079 -lib:lib.py-L392-INFO: borrow successed! The book: 2
+2015-09-06 19:50:14,079 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 368.34ms
+2015-09-06 19:50:52,040 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-06 19:50:52,041 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-06 19:50:52,042 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 3.06ms
+2015-09-06 19:50:52,061 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-06 19:50:52,065 -lib:lib.py-L323-INFO: query result: {'readerid': 3, 'bookid': 2, 'returndate': 1444297813L, 'renew': 0, 'borrowdate': 1441594213L, 'brw_id': 1}
+2015-09-06 19:50:52,066 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 6.52ms
+2015-09-06 20:37:43,916 -master:master.py-L47-WARNING: Caught signal: 2
+2015-09-06 20:37:43,916 -master:master.py-L51-INFO: stopping http server
+2015-09-06 20:37:43,917 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-09-06 20:37:46,924 -master:master.py-L67-INFO: Shutdown
+2015-09-06 20:37:46,925 -master:master.py-L122-INFO: Exit Master
+2015-09-07 18:30:18,561 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-09-07 18:30:18,562 -master:master.py-L109-INFO: Test info:Master start!
+2015-09-07 18:30:18,562 -master:master.py-L110-ERROR: Test error:Master start!
+2015-09-07 18:30:18,562 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-09-07 20:33:29,194 -lib:lib.py-L186-INFO:  in post method. receive data: {"age": "17", "type": null, "email": "ysd@sd.com", "reader_name": "ysd", "sex": "MAN"}
+2015-09-07 20:33:29,195 -tools:tools.py-L29-ERROR: Convert 'MAN' to Int Error: invalid literal for int() with base 10: 'MAN'
+2015-09-07 20:33:29,195 -lib:lib.py-L200-DEBUG: check parameters complete, ready to save in db
+2015-09-07 20:33:30,117 -lib:lib.py-L216-INFO: save reader object successed! the reader: {'age': 17, 'email': 'ysd@sd.com', 'reader_name': 'ysd', 'sex': None}
+2015-09-07 20:33:30,118 -web:web.py-L1908-INFO: 200 POST /reader (127.0.0.1) 927.31ms
+2015-09-07 20:33:37,952 -lib:lib.py-L258-INFO: reader detail! readerid:'5'
+2015-09-07 20:33:38,142 -lib:lib.py-L261-INFO: query result: {'reader_id': 5, 'sex': None, 'age': 17, 'type': 0, 'email': u'ysd@sd.com', 'reader_name': u'ysd'}
+2015-09-07 20:33:38,143 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=5 (127.0.0.1) 191.45ms
+2015-09-07 20:33:38,145 -lib:lib.py-L325-INFO: borrow detail! readerid:'5'
+2015-09-07 20:33:38,187 -lib:lib.py-L328-INFO: query result: []
+2015-09-07 20:33:38,187 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-07 20:33:38,188 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=5 (127.0.0.1) 42.77ms

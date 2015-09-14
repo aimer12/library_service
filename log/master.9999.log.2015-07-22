@@ -1,0 +1,134 @@
+2015-07-22 00:49:20,664 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-22 00:49:20,664 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-22 00:49:20,664 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-22 00:49:20,665 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-22 00:51:03,390 -web:web.py-L1908-INFO: 200 GET / (127.0.0.1) 0.81ms
+2015-07-22 00:51:03,544 -web:web.py-L1908-WARNING: 404 GET /favicon.ico (127.0.0.1) 34.74ms
+2015-07-22 00:51:56,414 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 00:51:56,414 -master:master.py-L51-INFO: stopping http server
+2015-07-22 00:51:56,414 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 00:51:56,415 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb693dcd4>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 69, in shutdown
+    stop_loop()
+  File "master.py", line 61, in stop_loop
+    if now < deadline and (io_loop.callbacks or io_loop._tiemouts):
+AttributeError: 'EPollIOLoop' object has no attribute 'callbacks'
+2015-07-22 00:52:47,592 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 00:52:47,592 -master:master.py-L51-INFO: stopping http server
+2015-07-22 00:52:47,593 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 00:52:47,594 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb693dd74>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 69, in shutdown
+    stop_loop()
+  File "master.py", line 61, in stop_loop
+    if now < deadline and (io_loop.callbacks or io_loop._tiemouts):
+AttributeError: 'EPollIOLoop' object has no attribute 'callbacks'
+2015-07-22 00:52:50,709 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 00:52:50,709 -master:master.py-L51-INFO: stopping http server
+2015-07-22 00:52:50,709 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 00:52:50,710 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb6619f54>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 69, in shutdown
+    stop_loop()
+  File "master.py", line 61, in stop_loop
+    if now < deadline and (io_loop.callbacks or io_loop._tiemouts):
+AttributeError: 'EPollIOLoop' object has no attribute 'callbacks'
+2015-07-22 00:52:57,600 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 00:52:57,600 -master:master.py-L51-INFO: stopping http server
+2015-07-22 00:52:57,600 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 00:52:57,600 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb693dcd4>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 69, in shutdown
+    stop_loop()
+  File "master.py", line 61, in stop_loop
+    if now < deadline and (io_loop.callbacks or io_loop._tiemouts):
+AttributeError: 'EPollIOLoop' object has no attribute 'callbacks'
+2015-07-22 20:32:54,013 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-22 20:32:54,015 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-22 20:32:54,015 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-22 20:32:54,016 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-22 20:33:36,693 -web:web.py-L1908-INFO: 200 GET / (127.0.0.1) 0.80ms
+2015-07-22 20:33:36,788 -web:web.py-L1908-WARNING: 404 GET /favicon.ico (127.0.0.1) 8.14ms
+2015-07-22 20:33:36,795 -web:web.py-L1908-WARNING: 404 GET /favicon.ico (127.0.0.1) 0.42ms
+2015-07-22 20:38:04,402 -web:web.py-L1908-INFO: 304 GET / (127.0.0.1) 0.58ms
+2015-07-22 20:38:11,758 -web:web.py-L1908-WARNING: 405 GET /user (127.0.0.1) 0.40ms
+2015-07-22 20:39:36,295 -web:web.py-L1908-WARNING: 404 GET /readermange (127.0.0.1) 0.41ms
+2015-07-22 20:39:52,346 -web:web.py-L1908-INFO: 304 GET / (127.0.0.1) 0.30ms
+2015-07-22 20:39:59,671 -web:web.py-L1908-WARNING: 405 GET /bookmanage (127.0.0.1) 0.61ms
+2015-07-22 20:40:15,889 -web:web.py-L1908-WARNING: 405 GET /borrow (127.0.0.1) 1.15ms
+2015-07-22 20:40:20,120 -web:web.py-L1908-WARNING: 405 GET /borrow (127.0.0.1) 0.46ms
+2015-07-22 21:25:42,842 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 21:25:42,843 -master:master.py-L51-INFO: stopping http server
+2015-07-22 21:25:42,845 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 21:25:42,846 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb665deb4>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 69, in shutdown
+    stop_loop()
+  File "master.py", line 61, in stop_loop
+    if now < deadline and (io_loop._callbacks or io_loop._tiemouts):
+AttributeError: 'EPollIOLoop' object has no attribute '_tiemouts'
+2015-07-22 21:26:19,635 -autoreload:autoreload.py-L204-INFO: master.py modified; restarting server
+2015-07-22 21:26:20,098 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-22 21:26:20,098 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-22 21:26:20,098 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-22 21:26:20,099 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-22 21:26:28,463 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 21:26:28,464 -master:master.py-L51-INFO: stopping http server
+2015-07-22 21:26:28,464 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 21:26:31,467 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb6588f54>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 66, in stop_loop
+    GlobalVar.get_mq_client().disconnect()
+AttributeError: 'NoneType' object has no attribute 'disconnect'
+2015-07-22 21:26:31,470 -master:master.py-L124-INFO: Exit Master
+2015-07-22 21:46:00,002 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-22 21:46:00,002 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-22 21:46:00,002 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-22 21:46:00,002 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-22 21:46:03,558 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 21:46:03,559 -master:master.py-L51-INFO: stopping http server
+2015-07-22 21:46:03,560 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 21:46:06,594 -ioloop:ioloop.py-L612-ERROR: Exception in callback <functools.partial object at 0xb65e2f54>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/ioloop.py", line 592, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "master.py", line 66, in stop_loop
+    GlobalVar.get_mq_client().disconnect()
+AttributeError: 'NoneType' object has no attribute 'disconnect'
+2015-07-22 21:46:06,597 -master:master.py-L124-INFO: Exit Master
+2015-07-22 21:46:46,706 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-22 21:46:46,706 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-22 21:46:46,707 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-22 21:46:46,707 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-22 21:46:48,886 -master:master.py-L47-WARNING: Caught signal: 2
+2015-07-22 21:46:48,887 -master:master.py-L51-INFO: stopping http server
+2015-07-22 21:46:48,887 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-07-22 21:46:51,891 -master:master.py-L67-INFO: Shutdown
+2015-07-22 21:46:51,892 -master:master.py-L124-INFO: Exit Master

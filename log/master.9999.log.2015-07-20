@@ -1,0 +1,12 @@
+2015-07-20 19:36:12,102 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-20 19:36:12,102 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-20 19:36:12,102 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-20 19:36:12,103 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-20 19:36:37,909 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-20 19:36:37,910 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-20 19:36:37,910 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-20 19:36:37,910 -master:master.py-L113-DEBUG: Test debug:Master start!
+2015-07-20 19:37:45,829 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-07-20 19:37:45,829 -master:master.py-L111-INFO: Test info:Master start!
+2015-07-20 19:37:45,829 -master:master.py-L112-ERROR: Test error:Master start!
+2015-07-20 19:37:45,829 -master:master.py-L113-DEBUG: Test debug:Master start!

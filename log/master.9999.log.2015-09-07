@@ -1,0 +1,368 @@
+2015-09-07 20:39:03,407 -lib:lib.py-L75-INFO: in  insert method. receive data:{"publisher": "mingtian", "book_title": "python learn", "addr": "4-3-7", "author": "ai", "price": "3.4", "description": "something"}
+2015-09-07 20:39:03,730 -lib:lib.py-L96-DEBUG: check parameter complete, ready to save in db
+2015-09-07 20:39:03,868 -lib:lib.py-L113-INFO: save book object successed! the book: {'publisher': 'mingtian', 'book_title': 'python learn', 'addr': '4-3-7', 'author': 'ai', 'price': u'3.4', 'description': 'something'}
+2015-09-07 20:39:03,868 -web:web.py-L1908-INFO: 200 POST /book (127.0.0.1) 471.60ms
+2015-09-07 20:40:02,254 -lib:lib.py-L75-INFO: in  insert method. receive data:{"publisher": "qinghua", "book_title": "python web", "addr": "3-2-7", "author": "liyong wangwenqiang", "price": "3.8", "description": "improve your skill"}
+2015-09-07 20:40:02,255 -lib:lib.py-L96-DEBUG: check parameter complete, ready to save in db
+2015-09-07 20:40:02,361 -lib:lib.py-L113-INFO: save book object successed! the book: {'publisher': 'qinghua', 'book_title': 'python web', 'addr': '3-2-7', 'author': 'liyong wangwenqiang', 'price': u'3.8', 'description': 'improve your skill'}
+2015-09-07 20:40:02,361 -web:web.py-L1908-INFO: 200 POST /book (127.0.0.1) 108.63ms
+2015-09-07 20:45:00,750 -lib:lib.py-L75-INFO: in  insert method. receive data:{"publisher": "O'Reilly Media", "book_title": "Introduction to Tornado", "addr": "4-2-3", "author": "Micbael Dory", "price": "23.88", "description": "Tornado is a scalable, non-blocking web server."}
+2015-09-07 20:45:00,753 -lib:lib.py-L96-DEBUG: check parameter complete, ready to save in db
+2015-09-07 20:45:00,832 -lib:lib.py-L113-INFO: save book object successed! the book: {'publisher': "O'Reilly Media", 'book_title': 'Introduction to Tornado', 'addr': '4-2-3', 'author': 'Micbael Dory', 'price': u'23.88', 'description': 'Tornado is a scalable, non-blocking web server.'}
+2015-09-07 20:45:00,832 -web:web.py-L1908-INFO: 200 POST /book (127.0.0.1) 85.47ms
+2015-09-07 20:45:28,559 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-07 20:45:28,625 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}, {'publisher': u'mingtian', 'book_title': u'python learn', 'addr': u'4-3-7', 'author': u'ai', 'price': 3.4, 'book_id': 3, 'description': u'something'}, {'publisher': u'qinghua', 'book_title': u'python web', 'addr': u'3-2-7', 'author': u'liyong wangwenqiang', 'price': 3.8, 'book_id': 4, 'description': u'improve your skill'}]
+2015-09-07 20:45:28,626 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 66.74ms
+2015-09-07 20:46:31,555 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-07 20:46:31,558 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-07 20:46:31,560 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 4.96ms
+2015-09-07 20:46:31,597 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:46:31,602 -lib:lib.py-L323-INFO: query result: {'readerid': 3, 'bookid': 2, 'returndate': 1444297813L, 'renew': 0, 'borrowdate': 1441594213L, 'brw_id': 1}
+2015-09-07 20:46:31,609 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 12.45ms
+2015-09-07 20:47:43,379 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": null, "bookid": "2"}
+2015-09-07 20:47:43,379 -lib:lib.py-L366-ERROR: there is no parament bookid or readerid!
+2015-09-07 20:47:43,379 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 1.19ms
+2015-09-07 20:47:51,512 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": "4", "bookid": "2"}
+2015-09-07 20:47:51,687 -lib:lib.py-L392-INFO: borrow successed! The book: 2
+2015-09-07 20:47:51,688 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 178.81ms
+2015-09-07 20:47:57,612 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '3'
+2015-09-07 20:47:57,614 -lib:lib.py-L59-INFO: Query result: {'publisher': u'mingtian', 'book_title': u'python learn', 'addr': u'4-3-7', 'author': u'ai', 'price': 3.4, 'book_id': 3, 'description': u'something'}
+2015-09-07 20:47:57,615 -web:web.py-L1908-INFO: 200 GET /book?book_id=3 (127.0.0.1) 3.40ms
+2015-09-07 20:47:57,623 -lib:lib.py-L320-INFO: borrow detail! bookid:'3'
+2015-09-07 20:47:57,634 -lib:lib.py-L323-INFO: query result: None
+2015-09-07 20:47:57,635 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-07 20:47:57,635 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=3 (127.0.0.1) 12.92ms
+2015-09-07 20:48:03,872 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": "4", "bookid": "3"}
+2015-09-07 20:48:03,964 -lib:lib.py-L392-INFO: borrow successed! The book: 3
+2015-09-07 20:48:03,964 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 92.27ms
+2015-09-07 20:48:15,277 -lib:lib.py-L258-INFO: reader detail! readerid:'4'
+2015-09-07 20:48:15,278 -lib:lib.py-L261-INFO: query result: {'reader_id': 4, 'sex': None, 'age': 13, 'type': 0, 'email': u'aimer@123.com', 'reader_name': u'aimer'}
+2015-09-07 20:48:15,279 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=4 (127.0.0.1) 2.32ms
+2015-09-07 20:48:15,286 -lib:lib.py-L325-INFO: borrow detail! readerid:'4'
+2015-09-07 20:48:15,353 -lib:lib.py-L328-INFO: query result: [{'bookid': 2}, {'bookid': 3}]
+2015-09-07 20:48:15,354 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=4 (127.0.0.1) 68.50ms
+2015-09-07 20:49:37,123 -lib:lib.py-L258-INFO: reader detail! readerid:'4'
+2015-09-07 20:49:37,124 -lib:lib.py-L261-INFO: query result: {'reader_id': 4, 'sex': None, 'age': 13, 'type': 0, 'email': u'aimer@123.com', 'reader_name': u'aimer'}
+2015-09-07 20:49:37,125 -web:web.py-L1908-INFO: 200 GET /reader?reader_id=4 (127.0.0.1) 1.71ms
+2015-09-07 20:49:37,131 -lib:lib.py-L325-INFO: borrow detail! readerid:'4'
+2015-09-07 20:49:37,132 -lib:lib.py-L328-INFO: query result: [{'bookid': 2}, {'bookid': 3}]
+2015-09-07 20:49:37,133 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=4 (127.0.0.1) 1.89ms
+2015-09-07 20:51:15,575 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'tornado'
+2015-09-07 20:51:15,577 -lib:lib.py-L59-INFO: Query result: [{'publisher': u"O'Reilly Media", 'book_title': u'Introduction to Tornado', 'addr': u'4-2-3', 'author': u'Micbael Dory', 'price': 23.88, 'book_id': 5, 'description': u'Tornado is a scalable, non-blocking web server.'}]
+2015-09-07 20:51:15,579 -web:web.py-L1908-INFO: 200 GET /book?book_title=tornado (127.0.0.1) 3.82ms
+2015-09-07 20:51:19,811 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '5'
+2015-09-07 20:51:19,813 -lib:lib.py-L59-INFO: Query result: {'publisher': u"O'Reilly Media", 'book_title': u'Introduction to Tornado', 'addr': u'4-2-3', 'author': u'Micbael Dory', 'price': 23.88, 'book_id': 5, 'description': u'Tornado is a scalable, non-blocking web server.'}
+2015-09-07 20:51:19,817 -web:web.py-L1908-INFO: 200 GET /book?book_id=5 (127.0.0.1) 6.47ms
+2015-09-07 20:51:19,830 -lib:lib.py-L320-INFO: borrow detail! bookid:'5'
+2015-09-07 20:51:19,831 -lib:lib.py-L323-INFO: query result: None
+2015-09-07 20:51:19,831 -lib:lib.py-L337-ERROR: there is no record!
+2015-09-07 20:51:19,832 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=5 (127.0.0.1) 2.20ms
+2015-09-07 20:52:09,632 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-07 20:52:09,633 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}, {'publisher': u'mingtian', 'book_title': u'python learn', 'addr': u'4-3-7', 'author': u'ai', 'price': 3.4, 'book_id': 3, 'description': u'something'}, {'publisher': u'qinghua', 'book_title': u'python web', 'addr': u'3-2-7', 'author': u'liyong wangwenqiang', 'price': 3.8, 'book_id': 4, 'description': u'improve your skill'}]
+2015-09-07 20:52:09,634 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 3.23ms
+2015-09-07 20:52:12,487 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-07 20:52:12,488 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-07 20:52:12,489 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 2.34ms
+2015-09-07 20:52:12,498 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:12,503 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:12,794 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 296.04ms
+2015-09-07 20:52:14,818 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:14,819 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:14,820 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 2.43ms
+2015-09-07 20:52:16,834 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:16,835 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:16,835 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.04ms
+2015-09-07 20:52:18,865 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:18,866 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:18,872 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 33.95ms
+2015-09-07 20:52:20,874 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:20,874 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:20,875 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.69ms
+2015-09-07 20:52:22,880 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:22,881 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:22,883 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 3.09ms
+2015-09-07 20:52:24,887 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:24,887 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:24,888 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.69ms
+2015-09-07 20:52:26,894 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:26,894 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:26,895 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.46ms
+2015-09-07 20:52:28,900 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:28,900 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:28,901 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.66ms
+2015-09-07 20:52:30,904 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:30,905 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:30,906 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.92ms
+2015-09-07 20:52:32,918 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '2'
+2015-09-07 20:52:32,918 -lib:lib.py-L59-INFO: Query result: {'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}
+2015-09-07 20:52:32,919 -web:web.py-L1908-INFO: 200 GET /book?book_id=2 (127.0.0.1) 1.18ms
+2015-09-07 20:52:32,926 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:32,926 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:32,927 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.46ms
+2015-09-07 20:52:34,934 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:34,934 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:34,935 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 0.98ms
+2015-09-07 20:52:36,938 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:36,938 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:36,939 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.70ms
+2015-09-07 20:52:38,946 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:38,946 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:38,947 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.70ms
+2015-09-07 20:52:40,953 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:40,953 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:40,954 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.10ms
+2015-09-07 20:52:42,958 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:42,958 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:42,959 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.73ms
+2015-09-07 20:52:44,966 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:44,967 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:44,967 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 1.08ms
+2015-09-07 20:52:46,984 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:46,986 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:46,997 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 13.50ms
+2015-09-07 20:52:49,013 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:49,021 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:49,028 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 16.32ms
+2015-09-07 20:52:51,048 -lib:lib.py-L320-INFO: borrow detail! bookid:'2'
+2015-09-07 20:52:51,049 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.0.0.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 321, in get
+    ret=self.borrowdao.get_by_bookid(bid)
+  File "/home/aimer/library_service/dao/borrowdao.py", line 30, in get_by_bookid
+    return self.db.get(sql)
+  File "/home/aimer/library_service/util/torndb.py", line 152, in get
+    raise Exception("Multiple rows returned for Database.get() query")
+Exception: Multiple rows returned for Database.get() query
+2015-09-07 20:52:51,058 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 10.58ms
+2015-09-07 20:52:53,228 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '3'
+2015-09-07 20:52:53,244 -lib:lib.py-L59-INFO: Query result: {'publisher': u'mingtian', 'book_title': u'python learn', 'addr': u'4-3-7', 'author': u'ai', 'price': 3.4, 'book_id': 3, 'description': u'something'}
+2015-09-07 20:52:53,249 -web:web.py-L1908-INFO: 200 GET /book?book_id=3 (127.0.0.1) 21.10ms
+2015-09-07 20:52:53,251 -lib:lib.py-L320-INFO: borrow detail! bookid:'3'
+2015-09-07 20:52:53,397 -lib:lib.py-L323-INFO: query result: {'readerid': 4, 'bookid': 3, 'returndate': 1444387683L, 'renew': 0, 'borrowdate': 1441684083L, 'brw_id': 3}
+2015-09-07 20:52:53,400 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=3 (127.0.0.1) 149.93ms
+2015-09-07 20:53:43,644 -lib:lib.py-L43-INFO: in GET method! Get book by title: 'python'
+2015-09-07 20:53:43,645 -lib:lib.py-L59-INFO: Query result: [{'publisher': u'min', 'book_title': u'learn python the hard way', 'addr': u'4-2-4', 'author': u'wang', 'price': 3.7, 'book_id': 2, 'description': u'ok'}, {'publisher': u'mingtian', 'book_title': u'python learn', 'addr': u'4-3-7', 'author': u'ai', 'price': 3.4, 'book_id': 3, 'description': u'something'}, {'publisher': u'qinghua', 'book_title': u'python web', 'addr': u'3-2-7', 'author': u'liyong wangwenqiang', 'price': 3.8, 'book_id': 4, 'description': u'improve your skill'}]
+2015-09-07 20:53:43,646 -web:web.py-L1908-INFO: 200 GET /book?book_title=python (127.0.0.1) 2.24ms
+2015-09-07 20:53:45,888 -lib:lib.py-L39-INFO: in GET method! Get book by bookid: '3'
+2015-09-07 20:53:45,889 -lib:lib.py-L59-INFO: Query result: {'publisher': u'mingtian', 'book_title': u'python learn', 'addr': u'4-3-7', 'author': u'ai', 'price': 3.4, 'book_id': 3, 'description': u'something'}
+2015-09-07 20:53:45,893 -web:web.py-L1908-INFO: 200 GET /book?book_id=3 (127.0.0.1) 5.61ms
+2015-09-07 20:53:45,899 -lib:lib.py-L320-INFO: borrow detail! bookid:'3'
+2015-09-07 20:53:45,905 -lib:lib.py-L323-INFO: query result: {'readerid': 4, 'bookid': 3, 'returndate': 1444387683L, 'renew': 0, 'borrowdate': 1441684083L, 'brw_id': 3}
+2015-09-07 20:53:45,908 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=3 (127.0.0.1) 9.56ms
+2015-09-07 20:56:51,940 -master:master.py-L47-WARNING: Caught signal: 2
+2015-09-07 20:56:51,941 -master:master.py-L51-INFO: stopping http server
+2015-09-07 20:56:51,941 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-09-07 20:56:54,946 -master:master.py-L67-INFO: Shutdown
+2015-09-07 20:56:54,946 -master:master.py-L122-INFO: Exit Master

@@ -1,0 +1,897 @@
+2015-08-24 20:33:22,679 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:33:22,689 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:33:22,690 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:33:22,690 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:33:23,451 -torndb:torndb.py-L103-ERROR: Cannot connect to MySQL on localhost:3306
+Traceback (most recent call last):
+  File "/home/aimer/library_service/util/torndb.py", line 100, in __init__
+    self.reconnect()
+  File "/home/aimer/library_service/util/torndb.py", line 117, in reconnect
+    self._db = MySQLdb.connect(**self._db_args)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+2015-08-24 20:34:33,383 -master:master.py-L47-WARNING: Caught signal: 2
+2015-08-24 20:34:33,384 -master:master.py-L51-INFO: stopping http server
+2015-08-24 20:34:33,385 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-08-24 20:34:36,389 -master:master.py-L67-INFO: Shutdown
+2015-08-24 20:34:36,390 -master:master.py-L122-INFO: Exit Master
+2015-08-24 20:34:40,321 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:34:40,321 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:34:40,321 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:34:40,321 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:34:43,718 -master:master.py-L47-WARNING: Caught signal: 2
+2015-08-24 20:34:43,719 -master:master.py-L51-INFO: stopping http server
+2015-08-24 20:34:43,719 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-08-24 20:34:46,723 -master:master.py-L67-INFO: Shutdown
+2015-08-24 20:34:46,724 -master:master.py-L122-INFO: Exit Master
+2015-08-24 20:35:20,199 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:35:20,199 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:35:20,199 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:35:20,199 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:35:28,749 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 20:39:26,020 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:39:26,020 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:39:26,020 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:39:26,021 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:42:40,939 -web:web.py-L1908-INFO: 200 GET / (127.0.0.1) 17.60ms
+2015-08-24 20:42:41,417 -web:web.py-L1908-WARNING: 404 GET /favicon.ico (127.0.0.1) 57.62ms
+2015-08-24 20:42:54,590 -web:web.py-L1908-WARNING: 404 GET /book (127.0.0.1) 0.34ms
+2015-08-24 20:43:16,105 -web:web.py-L1908-WARNING: 404 GET /book?book_id=1 (127.0.0.1) 0.61ms
+2015-08-24 20:43:32,293 -web:web.py-L1908-WARNING: 404 GET /book?book_id=1 (127.0.0.1) 0.72ms
+2015-08-24 20:44:24,736 -web:web.py-L1908-WARNING: 404 GET /bookmanager (127.0.0.1) 0.35ms
+2015-08-24 20:44:37,407 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 23, in initialize
+    self.bookdao = self.BookDao(self.db)
+AttributeError: 'BookHandler' object has no attribute 'BookDao'
+2015-08-24 20:44:37,456 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 23, in initialize
+    self.bookdao = self.BookDao(self.db)
+AttributeError: 'BookHandler' object has no attribute 'BookDao'
+2015-08-24 20:44:42,266 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 23, in initialize
+    self.bookdao = self.BookDao(self.db)
+AttributeError: 'BookHandler' object has no attribute 'BookDao'
+2015-08-24 20:45:00,293 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 23, in initialize
+    self.bookdao = self.BookDao(self.db)
+AttributeError: 'BookHandler' object has no attribute 'BookDao'
+2015-08-24 20:45:05,009 -web:web.py-L1908-WARNING: 404 GET /bookmanager (127.0.0.1) 0.46ms
+2015-08-24 20:47:38,333 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 23, in initialize
+    self.bookdao = self.BookDao(self.db)
+AttributeError: 'BookHandler' object has no attribute 'BookDao'
+2015-08-24 20:48:01,284 -lib:lib.py-L327-ERROR: there is no parament bookid or readerid!
+2015-08-24 20:48:01,285 -web:web.py-L1908-INFO: 200 GET /borrow (127.0.0.1) 1.12ms
+2015-08-24 20:48:17,213 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 176, in initialize
+    self.readerdao = self.ReaderDao(self.db)
+AttributeError: 'ReaderHandler' object has no attribute 'ReaderDao'
+2015-08-24 20:48:17,216 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 176, in initialize
+    self.readerdao = self.ReaderDao(self.db)
+AttributeError: 'ReaderHandler' object has no attribute 'ReaderDao'
+2015-08-24 20:48:28,666 -http1connection:http1connection.py-L54-ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/httpserver.py", line 290, in finish
+    self.delegate.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1984, in finish
+    self.execute()
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 2004, in execute
+    **self.handler_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 185, in __init__
+    self.initialize(**kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 176, in initialize
+    self.readerdao = self.ReaderDao(self.db)
+AttributeError: 'ReaderHandler' object has no attribute 'ReaderDao'
+2015-08-24 20:52:50,527 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 20:52:51,430 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:52:51,430 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:52:51,431 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:52:51,431 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:54:58,449 -web:web.py-L1908-INFO: 304 GET / (127.0.0.1) 0.70ms
+2015-08-24 20:55:05,054 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 30, in get
+    book_title = self.tools.strip_string(book_title)
+AttributeError: 'BookHandler' object has no attribute 'tools'
+2015-08-24 20:55:05,058 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 3.73ms
+2015-08-24 20:56:52,995 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 20:56:53,234 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:56:53,234 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:56:53,234 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:56:53,234 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:56:56,559 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 45, in get
+    elif author != None:
+NameError: global name 'author' is not defined
+2015-08-24 20:56:56,567 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 7.76ms
+2015-08-24 20:58:28,313 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 20:58:28,557 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:58:28,557 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:58:28,558 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:58:28,558 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:58:32,230 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 20:58:32,230 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb687b1ac>>
+2015-08-24 20:58:32,230 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 60, in get
+    if resp == None or len(resp) == 0:
+TypeError: object of type 'instancemethod' has no len()
+2015-08-24 20:58:32,232 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 2.37ms
+2015-08-24 20:59:27,149 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 20:59:27,341 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 20:59:27,342 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 20:59:27,342 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 20:59:27,342 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 20:59:30,646 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 20:59:30,647 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb671c18c>>
+2015-08-24 20:59:30,647 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 38, in json_date_default
+    if isinstance(obj, datetime):
+NameError: global name 'datetime' is not defined
+2015-08-24 20:59:30,699 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 52.83ms
+2015-08-24 21:01:33,409 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/util/tools.py modified; restarting server
+2015-08-24 21:01:33,652 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 21:01:33,652 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 21:01:33,652 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 21:01:33,652 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 21:01:38,117 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 21:01:38,118 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66a318c>>
+2015-08-24 21:01:38,118 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 39, in json_date_default
+    if isinstance(obj, datetime):
+TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
+2015-08-24 21:01:38,126 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 9.11ms
+2015-08-24 21:01:41,684 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 21:01:41,684 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb68e24ec>>
+2015-08-24 21:01:41,685 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 39, in json_date_default
+    if isinstance(obj, datetime):
+TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
+2015-08-24 21:01:41,685 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 1.81ms
+2015-08-24 21:03:21,680 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/util/tools.py modified; restarting server
+2015-08-24 21:03:21,917 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 21:03:21,917 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 21:03:21,917 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 21:03:21,917 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 21:03:25,636 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 21:03:25,637 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66d616c>>
+2015-08-24 21:03:25,637 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 46, in json_date_default
+    raise TypeError('%r is not JSON serializable' % obj)
+TypeError: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66d616c>> is not JSON serializable
+2015-08-24 21:03:25,647 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 11.32ms
+2015-08-24 21:07:46,729 -master:master.py-L47-WARNING: Caught signal: 2
+2015-08-24 21:07:46,730 -master:master.py-L51-INFO: stopping http server
+2015-08-24 21:07:46,730 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-08-24 21:07:49,735 -master:master.py-L67-INFO: Shutdown
+2015-08-24 21:07:49,736 -master:master.py-L122-INFO: Exit Master
+2015-08-24 21:17:44,283 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 21:17:44,293 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 21:17:44,293 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 21:17:44,300 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 21:18:16,276 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 21:18:16,276 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66678ec>>
+2015-08-24 21:18:16,276 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 46, in json_date_default
+    raise TypeError('%r is not JSON serializable' % obj)
+TypeError: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66678ec>> is not JSON serializable
+2015-08-24 21:18:16,279 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 3.37ms
+2015-08-24 21:32:01,889 -web:web.py-L1908-INFO: 304 GET / (127.0.0.1) 0.62ms
+2015-08-24 21:32:19,082 -lib:lib.py-L317-INFO: borrow detail! bookid:'1'
+2015-08-24 21:32:19,208 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:32:19,209 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:32:19,209 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=1 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/borrow?bookid=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 335, in get
+    resp = self.Resp.make_response(code=RespCode.No_RECORD)
+AttributeError: class ResponseCode has no attribute 'No_RECORD'
+2015-08-24 21:32:19,209 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=1 (127.0.0.1) 127.61ms
+2015-08-24 21:32:25,848 -lib:lib.py-L317-INFO: borrow detail! bookid:'2'
+2015-08-24 21:32:25,850 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:32:25,850 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:32:25,851 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=2 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/borrow?bookid=2', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 335, in get
+    resp = self.Resp.make_response(code=RespCode.No_RECORD)
+AttributeError: class ResponseCode has no attribute 'No_RECORD'
+2015-08-24 21:32:25,860 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=2 (127.0.0.1) 13.02ms
+2015-08-24 21:32:42,359 -lib:lib.py-L317-INFO: borrow detail! bookid:'3'
+2015-08-24 21:32:42,361 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:32:42,361 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:32:42,362 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=3 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/borrow?bookid=3', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 335, in get
+    resp = self.Resp.make_response(code=RespCode.No_RECORD)
+AttributeError: class ResponseCode has no attribute 'No_RECORD'
+2015-08-24 21:32:42,368 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=3 (127.0.0.1) 9.94ms
+2015-08-24 21:32:45,602 -lib:lib.py-L317-INFO: borrow detail! bookid:'4'
+2015-08-24 21:32:45,603 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:32:45,603 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:32:45,603 -web:web.py-L1496-ERROR: Uncaught exception GET /borrow?bookid=4 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/borrow?bookid=4', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 335, in get
+    resp = self.Resp.make_response(code=RespCode.No_RECORD)
+AttributeError: class ResponseCode has no attribute 'No_RECORD'
+2015-08-24 21:32:45,605 -web:web.py-L1908-ERROR: 500 GET /borrow?bookid=4 (127.0.0.1) 3.78ms
+2015-08-24 21:32:49,459 -lib:lib.py-L327-ERROR: there is no parament bookid or readerid!
+2015-08-24 21:32:49,459 -web:web.py-L1908-INFO: 304 GET /borrow (127.0.0.1) 0.73ms
+2015-08-24 21:33:00,135 -lib:lib.py-L250-ERROR: there is no reader_id!
+2015-08-24 21:33:00,136 -web:web.py-L1496-ERROR: Uncaught exception GET /readermanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/readermanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 251, in get
+    resp=self.Resp.make_response(code=RespCode.NO_PARAMETER,pare= 'reader_id')
+TypeError: make_response() got an unexpected keyword argument 'pare'
+2015-08-24 21:33:00,144 -web:web.py-L1908-ERROR: 500 GET /readermanage (127.0.0.1) 9.03ms
+2015-08-24 21:33:25,592 -lib:lib.py-L255-INFO: reader detail! readerid:'1'
+2015-08-24 21:33:25,640 -lib:lib.py-L258-INFO: query result: {'reader_id': 1, 'sex': u'WOMEN', 'age': 13, 'type': 0, 'email': u'ailun@evol', 'reader_name': u'sanli'}
+2015-08-24 21:33:25,640 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=1 (127.0.0.1) 48.33ms
+2015-08-24 21:33:37,809 -lib:lib.py-L255-INFO: reader detail! readerid:'2'
+2015-08-24 21:33:37,810 -lib:lib.py-L258-INFO: query result: {'reader_id': 2, 'sex': u'MAN', 'age': 13, 'type': 0, 'email': u'juren@evol', 'reader_name': u'ailun'}
+2015-08-24 21:33:37,810 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=2 (127.0.0.1) 2.19ms
+2015-08-24 21:33:43,137 -lib:lib.py-L255-INFO: reader detail! readerid:'3'
+2015-08-24 21:33:43,140 -lib:lib.py-L258-INFO: query result: {'reader_id': 3, 'sex': u'WOMEN', 'age': 18, 'type': None, 'email': None, 'reader_name': u'dw'}
+2015-08-24 21:33:43,140 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=3 (127.0.0.1) 3.42ms
+2015-08-24 21:33:46,958 -lib:lib.py-L255-INFO: reader detail! readerid:'4'
+2015-08-24 21:33:46,959 -lib:lib.py-L258-INFO: query result: None
+2015-08-24 21:33:46,959 -lib:lib.py-L261-ERROR: there is no record!
+2015-08-24 21:33:46,960 -web:web.py-L1496-ERROR: Uncaught exception GET /readermanage?reader_id=4 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/readermanage?reader_id=4', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 262, in get
+    resp = self.Resp.make_response(code=RespCode.No_RECORD)
+AttributeError: class ResponseCode has no attribute 'No_RECORD'
+2015-08-24 21:33:46,961 -web:web.py-L1908-ERROR: 500 GET /readermanage?reader_id=4 (127.0.0.1) 2.96ms
+2015-08-24 21:33:51,264 -lib:lib.py-L255-INFO: reader detail! readerid:'5'
+2015-08-24 21:33:51,265 -lib:lib.py-L258-INFO: query result: None
+2015-08-24 21:33:51,266 -lib:lib.py-L261-ERROR: there is no record!
+2015-08-24 21:33:51,266 -web:web.py-L1496-ERROR: Uncaught exception GET /readermanage?reader_id=5 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/readermanage?reader_id=5', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 262, in get
+    resp = self.Resp.make_response(code=RespCode.No_RECORD)
+AttributeError: class ResponseCode has no attribute 'No_RECORD'
+2015-08-24 21:33:51,270 -web:web.py-L1908-ERROR: 500 GET /readermanage?reader_id=5 (127.0.0.1) 6.37ms
+2015-08-24 21:40:56,202 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '2'
+2015-08-24 21:40:56,205 -lib:lib.py-L58-INFO: Query result: {'publisher': None, 'book_title': u'learn python', 'addr': u'4-2-7', 'author': None, 'price': 3.43, 'book_id': 2, 'description': None}
+2015-08-24 21:40:56,206 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=2 (127.0.0.1) 4.41ms
+2015-08-24 21:41:03,546 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '3'
+2015-08-24 21:41:03,547 -lib:lib.py-L58-INFO: Query result: {'publisher': u'baihualou', 'book_title': u'learn python the hard way', 'addr': u'7-8-2', 'author': u'aimer yin', 'price': 34.2, 'book_id': 3, 'description': u' kanxinqing'}
+2015-08-24 21:41:03,547 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=3 (127.0.0.1) 2.04ms
+2015-08-24 21:41:06,896 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '4'
+2015-08-24 21:41:06,896 -lib:lib.py-L58-INFO: Query result: {'publisher': None, 'book_title': u'haizewang', 'addr': u'5-3-4', 'author': u'liu dw', 'price': 3.17, 'book_id': 4, 'description': None}
+2015-08-24 21:41:06,897 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=4 (127.0.0.1) 1.97ms
+2015-08-24 21:41:11,155 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '5'
+2015-08-24 21:41:11,156 -lib:lib.py-L58-INFO: Query result: {'publisher': u'bca', 'book_title': u'Restful Web Service', 'addr': u'4-2-34', 'author': u'yunjianfei', 'price': 34.14, 'book_id': 5, 'description': u'this is a book about restful web service'}
+2015-08-24 21:41:11,157 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=5 (127.0.0.1) 2.04ms
+2015-08-24 21:41:14,382 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '6'
+2015-08-24 21:41:14,383 -lib:lib.py-L58-INFO: Query result: None
+2015-08-24 21:41:14,384 -lib:lib.py-L61-ERROR: There is no record!
+2015-08-24 21:41:14,389 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=6 (127.0.0.1) 8.01ms
+2015-08-24 21:42:05,134 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '2'
+2015-08-24 21:42:05,135 -lib:lib.py-L58-INFO: Query result: {'publisher': None, 'book_title': u'learn python', 'addr': u'4-2-7', 'author': None, 'price': 3.43, 'book_id': 2, 'description': None}
+2015-08-24 21:42:05,135 -web:web.py-L1908-INFO: 304 GET /bookmanage?book_id=2 (127.0.0.1) 1.44ms
+2015-08-24 21:42:10,148 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '3'
+2015-08-24 21:42:10,149 -lib:lib.py-L58-INFO: Query result: {'publisher': u'baihualou', 'book_title': u'learn python the hard way', 'addr': u'7-8-2', 'author': u'aimer yin', 'price': 34.2, 'book_id': 3, 'description': u' kanxinqing'}
+2015-08-24 21:42:10,149 -web:web.py-L1908-INFO: 304 GET /bookmanage?book_id=3 (127.0.0.1) 1.03ms
+2015-08-24 21:47:51,534 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 21:47:51,800 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 21:47:51,801 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 21:47:51,801 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 21:47:51,801 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 21:48:03,726 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 21:48:03,727 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb663538c>>
+2015-08-24 21:48:03,727 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 46, in json_date_default
+    raise TypeError('%r is not JSON serializable' % obj)
+TypeError: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb663538c>> is not JSON serializable
+2015-08-24 21:48:03,729 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 3.43ms
+2015-08-24 21:49:04,356 -lib:lib.py-L255-INFO: reader detail! readerid:'3'
+2015-08-24 21:49:04,357 -lib:lib.py-L258-INFO: query result: {'reader_id': 3, 'sex': u'WOMEN', 'age': 18, 'type': None, 'email': None, 'reader_name': u'dw'}
+2015-08-24 21:49:04,357 -web:web.py-L1908-INFO: 304 GET /readermanage?reader_id=3 (127.0.0.1) 1.43ms
+2015-08-24 21:49:07,540 -lib:lib.py-L255-INFO: reader detail! readerid:'4'
+2015-08-24 21:49:07,541 -lib:lib.py-L258-INFO: query result: None
+2015-08-24 21:49:07,542 -lib:lib.py-L261-ERROR: there is no record!
+2015-08-24 21:49:07,543 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=4 (127.0.0.1) 3.69ms
+2015-08-24 21:49:10,589 -lib:lib.py-L255-INFO: reader detail! readerid:'4'
+2015-08-24 21:49:10,590 -lib:lib.py-L258-INFO: query result: None
+2015-08-24 21:49:10,590 -lib:lib.py-L261-ERROR: there is no record!
+2015-08-24 21:49:10,590 -web:web.py-L1908-INFO: 304 GET /readermanage?reader_id=4 (127.0.0.1) 1.04ms
+2015-08-24 21:49:41,985 -lib:lib.py-L250-ERROR: there is no reader_id!
+2015-08-24 21:49:41,985 -web:web.py-L1496-ERROR: Uncaught exception GET /readermanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/readermanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 251, in get
+    resp=self.Resp.make_response(code=RespCode.NO_PARAMETER,pare= 'reader_id')
+TypeError: make_response() got an unexpected keyword argument 'pare'
+2015-08-24 21:49:41,987 -web:web.py-L1908-ERROR: 500 GET /readermanage (127.0.0.1) 2.52ms
+2015-08-24 21:50:54,807 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 21:50:55,126 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 21:50:55,129 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 21:50:55,129 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 21:50:55,129 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 21:50:57,124 -lib:lib.py-L250-ERROR: there is no reader_id!
+2015-08-24 21:50:57,124 -web:web.py-L1908-INFO: 200 GET /readermanage (127.0.0.1) 0.98ms
+2015-08-24 21:51:20,256 -lib:lib.py-L327-ERROR: there is no parament bookid or readerid!
+2015-08-24 21:51:20,257 -web:web.py-L1908-INFO: 304 GET /borrow (127.0.0.1) 0.63ms
+2015-08-24 21:51:34,911 -lib:lib.py-L317-INFO: borrow detail! bookid:'1'
+2015-08-24 21:51:34,912 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:51:34,912 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:51:34,912 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=1 (127.0.0.1) 1.79ms
+2015-08-24 21:51:39,936 -lib:lib.py-L317-INFO: borrow detail! bookid:'2'
+2015-08-24 21:51:39,937 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:51:39,941 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:51:39,943 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=2 (127.0.0.1) 8.02ms
+2015-08-24 21:51:43,487 -lib:lib.py-L317-INFO: borrow detail! bookid:'2'
+2015-08-24 21:51:43,488 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:51:43,491 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:51:43,495 -web:web.py-L1908-INFO: 304 GET /borrow?bookid=2 (127.0.0.1) 8.59ms
+2015-08-24 21:51:46,765 -lib:lib.py-L317-INFO: borrow detail! bookid:'3'
+2015-08-24 21:51:46,766 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:51:46,766 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:51:46,766 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=3 (127.0.0.1) 1.10ms
+2015-08-24 21:51:51,416 -lib:lib.py-L317-INFO: borrow detail! bookid:'4'
+2015-08-24 21:51:51,417 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:51:51,417 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:51:51,418 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=4 (127.0.0.1) 2.77ms
+2015-08-24 21:51:55,199 -lib:lib.py-L317-INFO: borrow detail! bookid:'5'
+2015-08-24 21:51:55,225 -lib:lib.py-L320-INFO: query result: None
+2015-08-24 21:51:55,225 -lib:lib.py-L334-ERROR: there is no record!
+2015-08-24 21:51:55,225 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=5 (127.0.0.1) 26.71ms
+2015-08-24 21:55:43,137 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 21:55:43,708 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 21:55:43,708 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 21:55:43,709 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 21:55:43,709 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 21:56:01,059 -lib:lib.py-L55-INFO: in GET method! Get All book
+2015-08-24 21:56:01,059 -lib:lib.py-L59-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb669058c>>
+2015-08-24 21:56:01,060 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 68, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 46, in json_date_default
+    raise TypeError('%r is not JSON serializable' % obj)
+TypeError: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb669058c>> is not JSON serializable
+2015-08-24 21:56:01,069 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 10.58ms
+2015-08-24 22:00:33,715 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 22:00:34,077 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 22:00:34,078 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 22:00:34,078 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 22:00:34,078 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 22:00:41,247 -lib:lib.py-L55-INFO: in GET method! Get All book
+2015-08-24 22:00:41,247 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'Host': '127.1:9999', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 57, in get
+    for book in books:
+TypeError: 'instancemethod' object is not iterable
+2015-08-24 22:00:41,255 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 8.57ms
+2015-08-24 22:01:42,633 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 22:01:42,952 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 22:01:42,961 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 22:01:42,961 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 22:01:42,961 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 22:20:31,405 -web:web.py-L1908-WARNING: 404 GET /user?book_id=2 (127.0.0.1) 19.82ms
+2015-08-24 22:21:00,568 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '2'
+2015-08-24 22:21:00,608 -lib:lib.py-L58-INFO: Query result: {'publisher': None, 'book_title': u'learn python', 'addr': u'4-2-7', 'author': None, 'price': 3.43, 'book_id': 2, 'description': None}
+2015-08-24 22:21:00,610 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=2 (127.0.0.1) 42.99ms
+2015-08-24 22:23:55,913 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '2'
+2015-08-24 22:23:55,913 -lib:lib.py-L58-INFO: Query result: {'publisher': None, 'book_title': u'learn python', 'addr': u'4-2-7', 'author': None, 'price': 3.43, 'book_id': 2, 'description': None}
+2015-08-24 22:23:55,914 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=2 (127.0.0.1) 1.20ms
+2015-08-24 22:29:15,975 -lib:lib.py-L74-INFO: in  insert method. receive data:{"book_title": "i miss dw", "addr": "4-2-3"}
+2015-08-24 22:29:15,975 -web:web.py-L1496-ERROR: Uncaught exception POST /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='POST', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '44', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 83, in post
+    addr = tools.strip_string(h.get(addr, None))
+UnboundLocalError: local variable 'addr' referenced before assignment
+2015-08-24 22:29:16,011 -web:web.py-L1908-ERROR: 500 POST /bookmanage (127.0.0.1) 37.23ms
+2015-08-24 22:37:43,989 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 22:37:44,714 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 22:37:44,714 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 22:37:44,714 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 22:37:44,714 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 22:38:00,219 -lib:lib.py-L74-INFO: in  insert method. receive data:{"book_title": "i miss dw", "addr": "4-2-3"}
+2015-08-24 22:38:00,219 -lib:lib.py-L94-DEBUG: check parameter complete, ready to save in db
+2015-08-24 22:38:00,219 -web:web.py-L1496-ERROR: Uncaught exception POST /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='POST', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '44', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 101, in post
+    book['price'] = price
+NameError: global name 'price' is not defined
+2015-08-24 22:38:00,221 -web:web.py-L1908-ERROR: 500 POST /bookmanage (127.0.0.1) 2.99ms
+2015-08-24 22:41:59,790 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 22:41:59,989 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 22:41:59,989 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 22:41:59,989 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 22:41:59,989 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 22:42:18,718 -lib:lib.py-L74-INFO: in  insert method. receive data:{"book_title": "i miss dw", "addr": "4-2-3"}
+2015-08-24 22:42:18,719 -lib:lib.py-L95-DEBUG: check parameter complete, ready to save in db
+2015-08-24 22:42:19,017 -lib:lib.py-L112-INFO: save book object successed! the book: {'publisher': None, 'book_title': 'i miss dw', 'addr': '4-2-3', 'author': None, 'price': None, 'description': None}
+2015-08-24 22:42:19,018 -web:web.py-L1908-INFO: 200 POST /bookmanage (127.0.0.1) 299.88ms
+2015-08-24 22:49:44,159 -web:web.py-L1908-WARNING: 405 PUT /bookmanage (127.0.0.1) 1.33ms
+2015-08-24 22:51:02,014 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 22:51:02,250 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 22:51:02,250 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 22:51:02,250 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 22:51:02,250 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 22:51:17,262 -web:web.py-L1496-ERROR: Uncaught exception PUT /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='PUT', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Content-Length': '62', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 145, in put
+    h = json.loads(data)
+NameError: global name 'data' is not defined
+2015-08-24 22:51:17,264 -web:web.py-L1908-ERROR: 500 PUT /bookmanage (127.0.0.1) 2.38ms
+2015-08-24 22:55:59,283 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 22:55:59,528 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 22:55:59,528 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 22:55:59,528 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 22:55:59,528 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 22:56:13,298 -lib:lib.py-L147-INFO: in update method! receive data: {"book_title": "change python", "addr": "3-4-7", "book_id": 2}
+2015-08-24 22:56:13,442 -web:web.py-L1908-INFO: 200 PUT /bookmanage (127.0.0.1) 144.51ms
+2015-08-24 22:57:58,536 -lib:lib.py-L127-INFO:  in delete method! delete book by book_id:'2'.
+2015-08-24 22:57:58,597 -lib:lib.py-L138-INFO: delete book object successed!
+2015-08-24 22:57:58,598 -web:web.py-L1908-INFO: 200 DELETE /bookmanage?book_id=2 (127.0.0.1) 62.36ms
+2015-08-24 23:12:29,681 -lib:lib.py-L38-INFO: in GET method! Get book by bookid: '2'
+2015-08-24 23:12:29,683 -lib:lib.py-L58-INFO: Query result: None
+2015-08-24 23:12:29,683 -lib:lib.py-L61-ERROR: There is no record!
+2015-08-24 23:12:29,684 -web:web.py-L1908-INFO: 200 GET /bookmanage?book_id=2 (127.0.0.1) 2.85ms
+2015-08-24 23:12:59,044 -lib:lib.py-L54-INFO: in GET method! Get All book
+2015-08-24 23:12:59,044 -lib:lib.py-L58-INFO: Query result: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66fe94c>>
+2015-08-24 23:12:59,044 -web:web.py-L1496-ERROR: Uncaught exception GET /bookmanage (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='GET', uri='/bookmanage', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 67, in get
+    resp = self.Resp.make_response(code=RespCode.SUCCESS, content=resp)
+  File "/home/aimer/library_service/util/httpresponse.py", line 76, in make_response
+    return json.dumps(response, default=tools.json_date_default)
+  File "/usr/lib/python2.7/json/__init__.py", line 250, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/home/aimer/library_service/util/tools.py", line 46, in json_date_default
+    raise TypeError('%r is not JSON serializable' % obj)
+TypeError: <bound method BookDao.get_allbook of <dao.bookdao.BookDao instance at 0xb66fe94c>> is not JSON serializable
+2015-08-24 23:12:59,077 -web:web.py-L1908-ERROR: 500 GET /bookmanage (127.0.0.1) 35.44ms
+2015-08-24 23:15:56,618 -lib:lib.py-L185-INFO:  in post method. receive data: {"name": "awang"}
+2015-08-24 23:15:56,618 -lib:lib.py-L190-ERROR: there is no parameter 'reader_name'!
+2015-08-24 23:15:56,619 -web:web.py-L1908-INFO: 200 POST /readermanage (127.0.0.1) 1.49ms
+2015-08-24 23:16:28,396 -lib:lib.py-L185-INFO:  in post method. receive data: {"reader_name": "awang"}
+2015-08-24 23:16:28,397 -lib:lib.py-L199-DEBUG: check parameters complete, ready to save in db
+2015-08-24 23:16:28,504 -lib:lib.py-L210-ERROR: error oucurred when insert into table 'reader'
+2015-08-24 23:16:28,505 -web:web.py-L1908-INFO: 200 POST /readermanage (127.0.0.1) 108.90ms
+2015-08-24 23:28:03,098 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/dao/readerdao.py modified; restarting server
+2015-08-24 23:28:03,451 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 23:28:03,453 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 23:28:03,456 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 23:28:03,457 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 23:28:32,189 -lib:lib.py-L185-INFO:  in post method. receive data: {"reader_name": "awang"}
+2015-08-24 23:28:32,190 -lib:lib.py-L199-DEBUG: check parameters complete, ready to save in db
+2015-08-24 23:28:32,229 -lib:lib.py-L215-INFO: save reader object successed! the reader: {'age': None, 'email': None, 'reader_name': 'awang', 'sex': None}
+2015-08-24 23:28:32,230 -web:web.py-L1908-INFO: 200 POST /readermanage (127.0.0.1) 41.25ms
+2015-08-24 23:31:23,313 -lib:lib.py-L257-INFO: reader detail! readerid:'1'
+2015-08-24 23:31:23,314 -lib:lib.py-L260-INFO: query result: {'reader_id': 1, 'sex': u'WOMEN', 'age': 13, 'type': 0, 'email': u'ailun@evol', 'reader_name': u'sanli'}
+2015-08-24 23:31:23,315 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=1 (127.0.0.1) 1.83ms
+2015-08-24 23:34:48,280 -lib:lib.py-L275-INFO: in update method! receive data: {"reader_id": "5", "description": "heihei", "reader_name": "mingtian"}
+2015-08-24 23:34:48,342 -torndb:torndb.py-L309-ERROR: Error connecting to MySQL on localhost:3306
+2015-08-24 23:34:48,342 -readerdao:readerdao.py-L52-ERROR: update reader failed! Exception: (1054, "Unknown column 'description' in 'field list'") reader_id: 5
+2015-08-24 23:34:48,357 -lib:lib.py-L297-INFO: update reader object successed! the reader: {'reader_id': 5, 'sex': None, 'age': None, 'type': None, 'email': None, 'reader_name': u'awang'}
+2015-08-24 23:34:48,357 -web:web.py-L1908-INFO: 200 PUT /readermanage (127.0.0.1) 77.47ms
+2015-08-24 23:34:48,358 -lib:lib.py-L257-INFO: reader detail! readerid:'1'
+2015-08-24 23:34:48,361 -lib:lib.py-L260-INFO: query result: {'reader_id': 1, 'sex': u'WOMEN', 'age': 13, 'type': 0, 'email': u'ailun@evol', 'reader_name': u'sanli'}
+2015-08-24 23:34:48,361 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=1 (127.0.0.1) 3.31ms
+2015-08-24 23:36:01,090 -lib:lib.py-L275-INFO: in update method! receive data: {"reader_id": "5", "description": "heihei", "reader_name": "mingtian"}
+2015-08-24 23:36:01,091 -torndb:torndb.py-L309-ERROR: Error connecting to MySQL on localhost:3306
+2015-08-24 23:36:01,091 -readerdao:readerdao.py-L52-ERROR: update reader failed! Exception: (1054, "Unknown column 'description' in 'field list'") reader_id: 5
+2015-08-24 23:36:01,107 -lib:lib.py-L297-INFO: update reader object successed! the reader: {'reader_id': 5, 'sex': None, 'age': None, 'type': None, 'email': None, 'reader_name': u'awang'}
+2015-08-24 23:36:01,107 -web:web.py-L1908-INFO: 200 PUT /readermanage (127.0.0.1) 18.04ms
+2015-08-24 23:36:01,108 -lib:lib.py-L257-INFO: reader detail! readerid:'5'
+2015-08-24 23:36:01,111 -lib:lib.py-L260-INFO: query result: {'reader_id': 5, 'sex': None, 'age': None, 'type': None, 'email': None, 'reader_name': u'awang'}
+2015-08-24 23:36:01,111 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=5 (127.0.0.1) 3.25ms
+2015-08-24 23:38:06,163 -lib:lib.py-L275-INFO: in update method! receive data: {"reader_id": "5", "email": "heihei", "reader_name": "mingtian"}
+2015-08-24 23:38:06,275 -lib:lib.py-L297-INFO: update reader object successed! the reader: {'reader_id': 5, 'sex': None, 'age': None, 'type': None, 'email': u'heihei', 'reader_name': u'mingtian'}
+2015-08-24 23:38:06,276 -web:web.py-L1908-INFO: 200 PUT /readermanage (127.0.0.1) 113.40ms
+2015-08-24 23:38:06,277 -lib:lib.py-L257-INFO: reader detail! readerid:'5'
+2015-08-24 23:38:06,279 -lib:lib.py-L260-INFO: query result: {'reader_id': 5, 'sex': None, 'age': None, 'type': None, 'email': u'heihei', 'reader_name': u'mingtian'}
+2015-08-24 23:38:06,280 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=5 (127.0.0.1) 3.68ms
+2015-08-24 23:39:27,537 -lib:lib.py-L231-INFO: in delete method! delete reader by reader_id:'5'.
+2015-08-24 23:39:27,575 -lib:lib.py-L241-INFO: delete reader object successed!
+2015-08-24 23:39:27,576 -web:web.py-L1908-INFO: 200 DELETE /readermanage?reader_id=5 (127.0.0.1) 38.90ms
+2015-08-24 23:39:48,755 -lib:lib.py-L257-INFO: reader detail! readerid:'5'
+2015-08-24 23:39:48,755 -lib:lib.py-L260-INFO: query result: None
+2015-08-24 23:39:48,755 -lib:lib.py-L263-ERROR: there is no record!
+2015-08-24 23:39:48,756 -web:web.py-L1908-INFO: 200 GET /readermanage?reader_id=5 (127.0.0.1) 1.41ms
+2015-08-24 23:39:48,758 -lib:lib.py-L231-INFO: in delete method! delete reader by reader_id:'5'.
+2015-08-24 23:39:48,758 -lib:lib.py-L241-INFO: delete reader object successed!
+2015-08-24 23:39:48,759 -web:web.py-L1908-INFO: 200 DELETE /readermanage?reader_id=5 (127.0.0.1) 0.94ms
+2015-08-24 23:51:46,973 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 23:51:47,222 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 23:51:47,223 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 23:51:47,223 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 23:51:47,223 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 23:55:24,564 -lib:lib.py-L357-INFO: in  post method. receive data:{"readerid": 3, "bookid": 1}
+2015-08-24 23:55:24,564 -web:web.py-L1496-ERROR: Uncaught exception POST /borrow (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='POST', uri='/borrow', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '28', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 375, in post
+    datearray=datetime.datetime.utcfromtimestamp(nowstamp)
+NameError: global name 'datetime' is not defined
+2015-08-24 23:55:24,567 -web:web.py-L1908-ERROR: 500 POST /borrow (127.0.0.1) 3.10ms
+2015-08-24 23:58:25,229 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-24 23:58:25,433 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-24 23:58:25,433 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-24 23:58:25,434 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-24 23:58:25,434 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-24 23:58:31,615 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": 3, "bookid": 1}
+2015-08-24 23:58:31,615 -web:web.py-L1496-ERROR: Uncaught exception POST /borrow (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='POST', uri='/borrow', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '28', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 376, in post
+    datearray=datetime.datetime.utcfromtimestamp(nowstamp)
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2015-08-24 23:58:31,616 -web:web.py-L1908-ERROR: 500 POST /borrow (127.0.0.1) 2.24ms
+2015-08-24 23:59:30,440 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 00:01:17,463 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 00:01:17,464 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 00:01:17,464 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 00:01:17,464 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 00:01:23,479 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": 3, "bookid": 1}
+2015-08-25 00:01:23,643 -borrowdao:borrowdao.py-L19-ERROR: insert borrow failed! execption: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`library`.`borrow`, CONSTRAINT `borrow_ibfk_1` FOREIGN KEY (`bookid`) REFERENCES `book` (`book_id`))') brw: {'readerid': '3', 'returndate': 1443081683, 'borrowdate': 1440432083, 'bookid': '1'}
+2015-08-25 00:01:23,644 -lib:lib.py-L386-ERROR: error oucurred when insert into table 'borrow'
+2015-08-25 00:01:23,644 -web:web.py-L1496-ERROR: Uncaught exception POST /borrow (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='POST', uri='/borrow', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '28', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 387, in post
+    resp =self.Resp.make_response(code=RespCode.DB_ERROE)
+AttributeError: class ResponseCode has no attribute 'DB_ERROE'
+2015-08-25 00:01:23,646 -web:web.py-L1908-ERROR: 500 POST /borrow (127.0.0.1) 167.97ms
+2015-08-25 00:02:31,970 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 00:02:32,224 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 00:02:32,224 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 00:02:32,224 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 00:02:32,224 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 00:05:43,627 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": 3, "bookid": 1}
+2015-08-25 00:05:43,691 -borrowdao:borrowdao.py-L19-ERROR: insert borrow failed! execption: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`library`.`borrow`, CONSTRAINT `borrow_ibfk_1` FOREIGN KEY (`bookid`) REFERENCES `book` (`book_id`))') brw: {'readerid': '3', 'returndate': 1443081943, 'borrowdate': 1440432343, 'bookid': '1'}
+2015-08-25 00:05:43,692 -lib:lib.py-L386-ERROR: error oucurred when insert into table 'borrow'
+2015-08-25 00:05:43,692 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 66.07ms
+2015-08-25 00:09:39,296 -master:master.py-L47-WARNING: Caught signal: 2
+2015-08-25 00:09:39,300 -master:master.py-L51-INFO: stopping http server
+2015-08-25 00:09:39,301 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-08-25 00:09:42,304 -master:master.py-L67-INFO: Shutdown
+2015-08-25 00:09:42,305 -master:master.py-L122-INFO: Exit Master
+2015-08-25 14:07:07,239 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:07:07,240 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:07:07,240 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:07:07,240 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:07:52,053 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": 3, "bookid": 1}
+2015-08-25 14:07:52,102 -borrowdao:borrowdao.py-L19-ERROR: insert borrow failed! execption: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`library`.`borrow`, CONSTRAINT `borrow_ibfk_1` FOREIGN KEY (`bookid`) REFERENCES `book` (`book_id`))') brw: {'readerid': '3', 'returndate': 1443132472, 'borrowdate': 1440482872, 'bookid': '1'}
+2015-08-25 14:07:52,102 -lib:lib.py-L386-ERROR: error oucurred when insert into table 'borrow'
+2015-08-25 14:07:52,103 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 50.50ms
+2015-08-25 14:11:15,352 -lib:lib.py-L358-INFO: in  post method. receive data:{"readerid": 1, "bookid": 3}
+2015-08-25 14:11:15,389 -lib:lib.py-L392-INFO: borrow successed! The book: 3
+2015-08-25 14:11:15,390 -web:web.py-L1908-INFO: 200 POST /borrow (127.0.0.1) 38.02ms
+2015-08-25 14:15:36,055 -lib:lib.py-L320-INFO: borrow detail! bookid:'3'
+2015-08-25 14:15:36,088 -lib:lib.py-L323-INFO: query result: {'renew': 0, 'readerid': 1, 'returndate': 1443132675L, 'borrowdate': 1440483075L, 'bookid': 3}
+2015-08-25 14:15:36,089 -web:web.py-L1908-INFO: 200 GET /borrow?bookid=3 (127.0.0.1) 34.69ms
+2015-08-25 14:15:56,684 -lib:lib.py-L325-INFO: borrow detail! readerid:'1'
+2015-08-25 14:15:56,732 -lib:lib.py-L328-INFO: query result: []
+2015-08-25 14:15:56,732 -lib:lib.py-L337-ERROR: there is no record!
+2015-08-25 14:15:56,732 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=1 (127.0.0.1) 50.06ms
+2015-08-25 14:19:07,825 -lib:lib.py-L325-INFO: borrow detail! readerid:'1'
+2015-08-25 14:19:07,826 -lib:lib.py-L328-INFO: query result: []
+2015-08-25 14:19:07,826 -lib:lib.py-L337-ERROR: there is no record!
+2015-08-25 14:19:07,827 -web:web.py-L1908-INFO: 200 GET /borrow?readerid='1' (127.0.0.1) 1.77ms
+2015-08-25 14:19:58,607 -lib:lib.py-L325-INFO: borrow detail! readerid:'2'
+2015-08-25 14:19:58,607 -lib:lib.py-L328-INFO: query result: []
+2015-08-25 14:19:58,607 -lib:lib.py-L337-ERROR: there is no record!
+2015-08-25 14:19:58,608 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=2 (127.0.0.1) 1.47ms
+2015-08-25 14:23:57,246 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 14:23:57,475 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:23:57,476 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:23:57,476 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:23:57,476 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:24:03,730 -lib:lib.py-L325-INFO: borrow detail! readerid:'2'
+2015-08-25 14:24:03,731 -lib:lib.py-L328-INFO: query result: []
+2015-08-25 14:24:03,731 -lib:lib.py-L337-ERROR: there is no record!
+2015-08-25 14:24:03,732 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=2 (127.0.0.1) 2.95ms
+2015-08-25 14:24:56,627 -lib:lib.py-L325-INFO: borrow detail! readerid:'2'
+2015-08-25 14:24:56,627 -lib:lib.py-L328-INFO: query result: []
+2015-08-25 14:24:56,627 -lib:lib.py-L337-ERROR: there is no record!
+2015-08-25 14:24:56,628 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=2 (127.0.0.1) 0.99ms
+2015-08-25 14:25:10,385 -lib:lib.py-L325-INFO: borrow detail! readerid:'1'
+2015-08-25 14:25:10,386 -lib:lib.py-L328-INFO: query result: [{'bookid': 3}]
+2015-08-25 14:25:10,386 -web:web.py-L1908-INFO: 200 GET /borrow?readerid=1 (127.0.0.1) 0.91ms
+2015-08-25 14:30:34,480 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 14:30:34,760 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:30:34,761 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:30:34,761 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:30:34,761 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:32:30,774 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:32:30,989 -lib:lib.py-L457-ERROR: Fail! already done before.
+2015-08-25 14:32:30,993 -web:web.py-L1908-INFO: 200 PUT /borrow (127.0.0.1) 221.20ms
+2015-08-25 14:34:08,765 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 14:34:08,966 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:34:08,967 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:34:08,967 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:34:08,967 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:34:13,476 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:34:13,476 -lib:lib.py-L457-ERROR: Fail! already done before.
+2015-08-25 14:34:13,477 -web:web.py-L1908-INFO: 200 PUT /borrow (127.0.0.1) 1.80ms
+2015-08-25 14:39:42,989 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:39:42,996 -web:web.py-L1496-ERROR: Uncaught exception PUT /borrow (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='PUT', uri='/borrow', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Content-Length': '13', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 453, in put
+    ret=update_returndate(re1stamp,bookid)
+NameError: global name 'update_returndate' is not defined
+2015-08-25 14:39:42,999 -web:web.py-L1908-ERROR: 500 PUT /borrow (127.0.0.1) 10.27ms
+2015-08-25 14:40:58,973 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 14:40:59,233 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:40:59,233 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:40:59,233 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:40:59,233 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:41:03,893 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:41:03,940 -lib:lib.py-L457-ERROR: Fail! already done before.
+2015-08-25 14:41:03,942 -web:web.py-L1908-INFO: 200 PUT /borrow (127.0.0.1) 50.02ms
+2015-08-25 14:41:26,742 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:41:26,807 -web:web.py-L1496-ERROR: Uncaught exception PUT /borrow (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.1:9999', method='PUT', uri='/borrow', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'close', 'Content-Length': '13', 'Host': '127.1:9999', 'Accept-Encoding': 'gzip'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado-4.2-py2.7-linux-i686.egg/tornado/web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/aimer/library_service/service/lib.py", line 453, in put
+    ret=borrowdao.update_returndate(re1stamp,bookid)
+NameError: global name 'borrowdao' is not defined
+2015-08-25 14:41:26,810 -web:web.py-L1908-ERROR: 500 PUT /borrow (127.0.0.1) 67.77ms
+2015-08-25 14:42:46,239 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 14:42:46,438 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:42:46,439 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:42:46,439 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:42:46,439 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:43:00,950 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:43:00,992 -lib:lib.py-L455-INFO: renew success! bookid:'3'
+2015-08-25 14:43:00,992 -web:web.py-L1908-INFO: 200 PUT /borrow (127.0.0.1) 42.84ms
+2015-08-25 14:46:29,443 -autoreload:autoreload.py-L204-INFO: /home/aimer/library_service/service/lib.py modified; restarting server
+2015-08-25 14:46:29,638 -master:master.py-L44-INFO: Current log level is: DEBUG
+2015-08-25 14:46:29,651 -master:master.py-L109-INFO: Test info:Master start!
+2015-08-25 14:46:29,653 -master:master.py-L110-ERROR: Test error:Master start!
+2015-08-25 14:46:29,653 -master:master.py-L111-DEBUG: Test debug:Master start!
+2015-08-25 14:46:38,878 -lib:lib.py-L443-INFO: renew book id:3
+2015-08-25 14:46:38,920 -lib:lib.py-L455-INFO: renew success! bookid:'3'
+2015-08-25 14:46:38,921 -web:web.py-L1908-INFO: 200 PUT /borrow (127.0.0.1) 43.34ms
+2015-08-25 14:48:15,562 -lib:lib.py-L422-INFO: delete borrow book 3
+2015-08-25 14:48:15,594 -lib:lib.py-L425-INFO: delete successed!
+2015-08-25 14:48:15,595 -web:web.py-L1908-INFO: 200 DELETE /borrow?bookid=3 (127.0.0.1) 33.44ms
+2015-08-25 18:55:52,989 -master:master.py-L47-WARNING: Caught signal: 2
+2015-08-25 18:55:52,990 -master:master.py-L51-INFO: stopping http server
+2015-08-25 18:55:52,992 -master:master.py-L54-INFO: Master will shutdown in 3 seconds ...
+2015-08-25 18:55:55,996 -master:master.py-L67-INFO: Shutdown
+2015-08-25 18:55:55,997 -master:master.py-L122-INFO: Exit Master
